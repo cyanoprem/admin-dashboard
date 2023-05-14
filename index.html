@@ -7,13 +7,15 @@
   <title>Admin Dashboard</title>
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" /> 
 <link rel="stylesheet" href="style.css">
 <body>
 
-  <div class="tile is-ancestor">
+  <div id="container" class="mr-2">
     
-    <div class="pt-5 pl-6 tile is-3 is-parent">
-      <div class="tile is-child">
+    <div id="sidebar" class="pl-4 pt-5">
+      <div class="">
         <aside class="menu">
           <p class="menu-label">
             Dashboard
@@ -37,123 +39,293 @@
       </div>
     </div>
 
-    <div id="right-content" class="tile is-vertical is-parent is-9 pl-5 pr-5">
-      <div id="header" class="tile is-child box p-0">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-          
-          <div class="navbar-item">
-            <div class="field is-grouped">
-              <p class="control is-expanded">
-                <input class="input" type="text" placeholder="Find a repository">
-              </p>
-              <p class="control">
-                <a class="button is-primary">
-                  Search
-                </a>
-              </p>
-            </div>
+    <div id="header">
+
+      <div id="header-line-one" class="pt-1">
+
+        <div id="search" class="pl-1">
+          <div class="field is-grouped">
+            <p class="control">
+              <input class="input" type="text" placeholder="Search...">
+            </p>
+            <p class="control">
+              <a class="button is-primary">
+                <i class="mdi mdi-18px mdi-magnify"></i>
+              </a>
+            </p>
           </div>
-        
-          <div>
-            <a class="navbar-item">
-              Home
+        </div>
+
+        <div id="notifications-bell">
+            <a class="icon has-text-primary">
+              <i class="mdi mdi-18px mdi-bell"></i>
             </a>
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-link">
-                  New
-                </a>
-                <a class="button is-link">
-                  Upload
-                </a>
-                <a class="button is-link">
-                  Share
-                </a>
-              </div>
-            </div>
-          </div>
+        </div>
 
-        </nav>
+        <div id="profile-menu">
+          <figure class="image is-32x32">
+            <img class="is-rounded" src="images/dexter.jpg">
+          </figure>
+        </div>
 
-      </div>
-      <div id="main-content" class="tile is-child">
-
-        <div class="columns is-multiline">
-
-          <div class="column is-one-third-tablet">
-            <div class="card">
-              <div class="card-content">
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-third-tablet">
-            <div class="card">
-              <div class="card-content">
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-third-tablet">
-            <div class="card">
-              <div class="card-content">
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-third-tablet">
-            <div class="card">
-              <div class="card-content">
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-third-tablet">
-            <div class="card">
-              <div class="card-content">
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-third-tablet">
-            <div class="card">
-              <div class="card-content">
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris.
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div id="user-name" class="mr-1">
+          <a class="has-text-dark">
+            Morgan Oakley
+          </a>
         </div>
 
       </div>
+
+      <div id="header-line-two">
+    
+        <div>
+          <div class="buttons">
+            <a class="button is-link">
+              New
+            </a>
+            <a class="button is-link">
+              Upload
+            </a>
+            <a class="button is-link">
+              Share
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div> <!-- <div id="header"> -->
+
+    <div id="main-content" class="">
+
+      <div class="columns is-multiline">
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
   </div>
+
+  <div id="mobile-container">
+    <div id="header">
+
+      <div class="dropdown">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+            <span class="icon is-small">
+              <i class="mdi mdi-view-dashboard" aria-hidden="true"></i>
+            </span>
+            <span class="icon is-small">
+              <i class="mdi mdi-menu-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+            </div>
+            <hr class="dropdown-divider">
+            <div class="dropdown-item">
+              <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+            </div>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">
+              This is a link
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="search" class="pl-1">
+        <div class="field is-grouped">
+          <p class="control">
+            <input class="input" type="text" placeholder="Search...">
+          </p>
+          <p class="control">
+            <a class="button is-primary">
+              <i class="mdi mdi-18px mdi-magnify"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div id="notifications-bell">
+          <a class="icon has-text-primary">
+            <i class="mdi mdi-18px mdi-bell"></i>
+          </a>
+      </div>
+
+      <div id="profile-menu">
+        <figure class="image is-32x32">
+          <img class="is-rounded" src="images/dexter.jpg">
+        </figure>
+      </div>
+
+      <div id="user-name" class="mr-1">
+        <a class="has-text-dark">
+          Morgan Oakley
+        </a>
+      </div>
+
+    
+      <div>
+        <div class="buttons">
+          <a class="button is-link">
+            New
+          </a>
+          <a class="button is-link">
+            Upload
+          </a>
+          <a class="button is-link">
+            Share
+          </a>
+        </div>
+      </div>
+
+    </div> <!-- <div id="header"> -->
+
+    <div id="main-content" class="">
+
+      <div class="columns is-multiline">
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
   
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
