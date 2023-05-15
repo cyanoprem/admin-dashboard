@@ -1,5 +1,11 @@
-var dropdown = document.querySelector('.dropdown');
-dropdown.addEventListener('click', function(event) {
+var dashboardDropdown = document.querySelector('#mobile-dashbord-dropdown');
+dashboardDropdown.addEventListener('click', function(event) {
   event.stopPropagation();
-  dropdown.classList.toggle('is-active');
+  dashboardDropdown.classList.toggle('is-active');
+});
+
+var profileDropdown = document.querySelector('#mobile-profile-dropdown');
+profileDropdown.addEventListener('click', function(event) {
+  event.stopPropagation();
+  profileDropdown.classList.toggle('is-active');
 });

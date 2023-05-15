@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="style.css">
 <body>
 
-  <div id="container" class="mr-2">
+  <div id="container" class="p-2">
     
     <div id="sidebar" class="pl-4 pt-5">
       <div class="">
@@ -78,7 +78,7 @@
 
       <div id="header-line-two">
     
-        <div>
+        <div class="pt-1 pb-2">
           <div class="buttons">
             <a class="button is-link">
               New
@@ -172,10 +172,10 @@
 
   </div>
 
-  <div id="mobile-container">
-    <div id="header">
+  <div id="mobile-container" class="p-2">
+    <div id="mobile-header">
 
-      <div class="dropdown">
+      <div id="mobile-dashbord-dropdown" class="dropdown ml-1 mr-1">
         <div class="dropdown-trigger">
           <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
             <span class="icon is-small">
@@ -188,22 +188,38 @@
         </div>
         <div class="dropdown-menu" id="dropdown-menu2" role="menu">
           <div class="dropdown-content">
-            <div class="dropdown-item">
-              <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-            </div>
-            <hr class="dropdown-divider">
-            <div class="dropdown-item">
-              <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
-            </div>
-            <hr class="dropdown-divider">
             <a href="#" class="dropdown-item">
-              This is a link
+              Home
+            </a>
+            <a href="#" class="dropdown-item">
+              Profile
+            </a>
+            <a href="#" class="dropdown-item">
+              Messages
+            </a>
+            <a href="#" class="dropdown-item">
+              History
+            </a>
+            <a href="#" class="dropdown-item">
+              Tasks
+            </a>
+            <a href="#" class="dropdown-item">
+              Communities
+            </a>
+            <a href="#" class="dropdown-item">
+              Settings
+            </a>
+            <a href="#" class="dropdown-item">
+              Support
+            </a>
+            <a href="#" class="dropdown-item">
+              Privacy
             </a>
           </div>
         </div>
       </div>
 
-      <div id="search" class="pl-1">
+      <div id="mobile-search" class="">
         <div class="field is-grouped">
           <p class="control">
             <input class="input" type="text" placeholder="Search...">
@@ -216,42 +232,43 @@
         </div>
       </div>
 
-      <div id="notifications-bell">
-          <a class="icon has-text-primary">
-            <i class="mdi mdi-18px mdi-bell"></i>
-          </a>
-      </div>
-
-      <div id="profile-menu">
-        <figure class="image is-32x32">
-          <img class="is-rounded" src="images/dexter.jpg">
-        </figure>
-      </div>
-
-      <div id="user-name" class="mr-1">
-        <a class="has-text-dark">
-          Morgan Oakley
-        </a>
-      </div>
-
-    
-      <div>
-        <div class="buttons">
-          <a class="button is-link">
-            New
-          </a>
-          <a class="button is-link">
-            Upload
-          </a>
-          <a class="button is-link">
-            Share
-          </a>
+      <div id="mobile-profile-dropdown" class="dropdown is-right ml-1 mr-1">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+            <div id="profile-menu">
+              <figure class="image is-32x32">
+                <img class="is-rounded" src="images/dexter.jpg">
+              </figure>
+            </div>
+            <span class="icon is-small">
+              <i class="mdi mdi-menu-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">
+              Profile
+            </a>
+            <a href="#" class="dropdown-item">
+              Notifications
+            </a>
+            <a href="#" class="dropdown-item">
+              New
+            </a>
+            <a href="#" class="dropdown-item">
+              Upload
+            </a>
+            <a href="#" class="dropdown-item">
+              Share
+            </a>
+          </div>
         </div>
       </div>
 
-    </div> <!-- <div id="header"> -->
+    </div> 
 
-    <div id="main-content" class="">
+    <div id="mobile-main-content" class="pl-2 pr-2">
 
       <div class="columns is-multiline">
 

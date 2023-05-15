@@ -74,6 +74,23 @@
 
   #mobile-container {
     display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-auto-flow: column;
+    
+  }
+
+  #mobile-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;    
+  }
+
+  #mobile-dashbord-dropdown, #mobile-search, #mobile-profile-dropdown {
+    align-self : center;
+    justify-self: center;
+  }
+
+  #mobile-search {
+    min-width: 264px;
   }
 }
 
